@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git url: 'https://github.com/hamzaafzaalofficial/https://github.com/hamzaafzaalofficial/Automated-CI-CD-Pipeline-Optimization-using-Jenkins-and-MLflow.git', branch: 'main'
+                git url: 'https://github.com/hamzaafzaalofficial/Automated-CI-CD-Pipeline-Optimization-using-Jenkins-and-MLflow.git', branch: 'main'
             }
         }
 

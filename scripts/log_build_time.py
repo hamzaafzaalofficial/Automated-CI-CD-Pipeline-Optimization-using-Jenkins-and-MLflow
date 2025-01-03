@@ -3,7 +3,7 @@ import time
 import sys
 import os
 
-mlflow.set_tracking_uri(os.environ.get('MLFLOW_TRACKING_URI', 'http://localhost:5000'))
+mlflow.set_tracking_uri(os.environ.get('MLFLOW_TRACKING_URI', 'http://192.168.122.1:5000'))
 
 build_number = sys.argv[1] if len(sys.argv) > 1 else 'unknown'
 

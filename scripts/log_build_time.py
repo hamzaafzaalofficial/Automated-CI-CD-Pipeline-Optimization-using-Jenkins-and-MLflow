@@ -10,7 +10,7 @@ build_number = sys.argv[1] if len(sys.argv) > 1 else 'unknown'
 
 with mlflow.start_run():
     start_time = time.time()
-    time.sleep(120)  # Simulate build time
+    time.sleep(60)  # Simulate build time
     build_time = time.time() - start_time
     mlflow.log_metric('build_time', build_time)
     mlflow.set_tag('stage', 'build')

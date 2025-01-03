@@ -10,7 +10,7 @@ mlflow.set_tracking_uri(os.environ.get('MLFLOW_TRACKING_URI', 'http://localhost:
 
 with mlflow.start_run():
     start_time = time.time()
-    time.sleep(300)  # Simulate deploy time
+    time.sleep(60)  # Simulate deploy time
     deploy_time = time.time() - start_time
     mlflow.log_metric('deploy_time', deploy_time)
     mlflow.set_tag('stage', 'deploy')
